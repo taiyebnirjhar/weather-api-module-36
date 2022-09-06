@@ -1,12 +1,5 @@
 const api_key = "64c5ebe0d71bf196b65463ced09bc351";
 
-// fetch(
-//   `https://api.openweathermap.org/data/2.5/weather?q=${"dhaka"}&appid=${api_key}`
-// )
-//   .then((res) => res.json())
-//   .then((data) => console.log(data))
-//   .catch((err) => console.log(err));
-
 //   get element
 
 const input = document.querySelector("#input");
@@ -44,6 +37,7 @@ const weather = () => {
     .catch((err) => {
       alert("failed to fetch");
       spinner.classList.value = "d-none spinner-border text-primary";
+      input.value = "";
       console.log(err);
     });
 };
