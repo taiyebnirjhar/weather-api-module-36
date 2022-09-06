@@ -22,20 +22,33 @@
     <div class="container">
         <form class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <input type="text" id="input" class="form-control" placeholder="Enter a location for Weather ...">
                 <div class="input-group-append">
-                    <button type="button" class="btn btn-danger">Search</button>
+                    <button type="button" class="btn btn-danger " id="submit">Search</button>
                 </div>
             </div>
         </form>
         <div class="weather-status text-white text-center">
             <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-            <h1>Dhaka</h1>
-            <h3><span>38.06</span>&deg;C</h3>
-            <h1 class="lead">Clouds</h1>
+
+
+            <div>
+                <!-- spinner -->
+                <div id="spinner" class=" d-none spinner-border text-primary" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+                <!-- content -->
+                <div id="content">
+                    <h1 id="name">--</h1>
+                    <h3><span id="temp">-</span>&deg;C</h3>
+                    <h1 class="lead" id="lead">--</h1>
+                </div>
+
+            </div>
+
         </div>
     </div>
-
+    <script src="./app.js"></script>
 </body>
 
 </html>
