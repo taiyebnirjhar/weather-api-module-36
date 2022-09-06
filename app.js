@@ -33,9 +33,10 @@ const weather = () => {
 
       spinner.classList.value = "d-none spinner-border text-primary";
       content.classList.value = "";
+      input.value = "";
     })
     .catch((err) => {
-      alert("failed to fetch");
+      alert("Not found");
       spinner.classList.value = "d-none spinner-border text-primary";
       input.value = "";
       console.log(err);
