@@ -27,6 +27,7 @@ const weather = () => {
       const { name } = data;
       const { temp } = data.main;
       const { main } = data.weather[0];
+
       city_name.textContent = name;
       temperature.textContent = `${temp}`;
       lead.textContent = main;
